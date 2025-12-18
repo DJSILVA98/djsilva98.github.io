@@ -3,164 +3,223 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nova Fusion Master — Tecnologia, Inovação e Entretenimento</title>
-  <meta name="description" content="Nova Fusion Master é um hub de tecnologia, inovação e entretenimento, com análises objetivas, notícias e guias práticos.">
+  <title>Natal do Bem — Nova Fusion Master</title>
+
+  <meta name="description" content="Natal do Bem — Campanha solidária para arrecadação de doações e apoio a famílias em situação de vulnerabilidade.">
   <meta name="google-adsense-account" content="ca-pub-3788293529175181">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Nova Fusion Master">
-  <meta property="og:description" content="Tecnologia, inovação e entretenimento com conteúdo claro, útil e atualizado.">
+
+  <meta property="og:title" content="Natal do Bem — Nova Fusion Master">
+  <meta property="og:description" content="Neste Natal, transforme solidariedade em esperança. Doe e faça a diferença.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="iara.jpg">
+  <meta property="og:image" content="natal.jpg">
+
   <link rel="canonical" href="https://novafusionmaster.github.io/">
 
   <style>
     :root{
-      --bg:#0b0f14; --card:#111827; --muted:#9aa4b2; --text:#e5e7eb; --brand:#6ee7ff; --brand2:#8b5cf6;
+      --bg:#0b0f14;
+      --card:#111827;
+      --muted:#9aa4b2;
+      --text:#e5e7eb;
+      --brand:#6ee7ff;
+      --brand2:#8b5cf6;
       --ring: 0 0 0 2px rgba(110,231,255,.35);
     }
+
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue","Noto Sans",sans-serif}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue","Noto Sans",sans-serif
+    }
+
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
-    header{position:sticky;top:0;z-index:10;background:rgba(11,15,20,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1f2937}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(11,15,20,.7);
+      backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid #1f2937
+    }
+
     .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      height:64px
+    }
+
     .brand{font-weight:700;letter-spacing:.2px}
+
     .menu{display:flex;gap:14px}
     .menu a{padding:8px 10px;border-radius:10px}
     .menu a:focus-visible{outline:none;box-shadow:var(--ring)}
-    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;padding:40px 0}
-    .hero img{width:100%;height:auto;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-    .hero h1{font-size:clamp(24px,3.2vw,40px);margin:0 0 12px}
-    .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#081018;font-weight:700;font-size:12px;letter-spacing:.4px;margin-bottom:10px}
-    section{padding:28px 0}
-    .card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:20px}
-    .grid{display:grid;gap:16px}
-    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    h2{font-size:22px;margin:0 0 12px}
-    h3{font-size:18px;margin:0 0 8px}
-    p{margin:0 0 12px;color:var(--muted)}
-    ul{margin:0 0 12px 18px;color:var(--muted)}
-    footer{border-top:1px solid #1f2937;margin-top:24px}
+
+    /* HERO NATAL */
+    .hero-natal{
+      position:relative;
+      min-height:85vh;
+      background:url('natal.jpg') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+    }
+
+    .hero-natal::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.55);
+    }
+
+    .hero-content{
+      position:relative;
+      max-width:650px;
+      padding:20px;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:4px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg,#ff5252,#ffca28);
+      color:#2b0000;
+      font-weight:700;
+      font-size:12px;
+      letter-spacing:.4px;
+      margin-bottom:12px
+    }
+
+    h1{
+      font-size:clamp(26px,3.5vw,44px);
+      margin:0 0 12px
+    }
+
+    p{margin:0 0 14px;color:var(--muted)}
+
+    .btn-doar{
+      display:inline-block;
+      margin-top:20px;
+      padding:15px 36px;
+      background:#c62828;
+      color:#fff;
+      font-weight:700;
+      border-radius:999px;
+      font-size:18px;
+      text-decoration:none
+    }
+
+    .btn-doar:hover{
+      background:#b71c1c;
+      text-decoration:none
+    }
+
+    section{padding:32px 0}
+
+    .card{
+      background:var(--card);
+      border:1px solid #1f2937;
+      border-radius:16px;
+      padding:22px
+    }
+
+    footer{
+      border-top:1px solid #1f2937;
+      margin-top:32px
+    }
+
     .small{font-size:13px;color:var(--muted)}
-    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, monospace;background:#0f172a;color:#e2e8f0;padding:2px 6px;border-radius:6px;border:1px solid #1f2937}
-    .notice{border-left:4px solid var(--brand);padding:10px 12px;background:#0c1320;border-radius:8px}
-    @media (max-width:860px){ .hero{grid-template-columns:1fr;}}
+
+    @media (max-width:860px){
+      .hero-natal{min-height:75vh}
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="wrap nav">
-      <div class="brand">Nova Fusion Master</div>
-      <nav class="menu" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#artigos">Artigos</a>
-        <a href="#privacidade">Privacidade</a>
-        <a href="#contato">Contato</a>
-      </nav>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Nova Fusion Master</div>
+    <nav class="menu">
+      <a href="#doacao">Doação</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO NATAL -->
+  <section class="hero-natal">
+    <div class="hero-content">
+      <span class="tag">🎄 Natal do Bem</span>
+      <h1>Neste Natal, transforme solidariedade em esperança</h1>
+      <p>
+        Um pequeno gesto seu pode levar alimento, dignidade e alegria
+        para famílias que mais precisam.
+      </p>
+      <a href="#doacao" class="btn-doar">❤️ Quero Doar Agora</a>
     </div>
-  </header>
+  </section>
 
-  <main class="wrap">
-    <section class="hero" aria-labelledby="titulo-site">
-      <img src="iara.jpg" alt="Imagem de capa do site Nova Fusion Master">
-      <div>
-        <span class="tag">Tecnologia • Inovação • Entretenimento</span>
-        <h1 id="titulo-site">Conteúdo claro, útil e direto ao ponto</h1>
-        <p>Guias práticos, análises objetivas e notícias selecionadas para quem quer entender o que realmente importa no mundo digital, com foco em qualidade.</p>
-        <div class="notice small" role="note">
-          Este site está conectado ao Google AdSense e segue as políticas do programa. Os anúncios só serão exibidos após a aprovação.
-        </div>
-      </div>
-    </section>
+  <!-- DOAÇÃO -->
+  <section id="doacao">
+    <div class="card">
+      <h2>❤️ Faça parte do Natal do Bem</h2>
+      <p>
+        Sua doação ajuda diretamente famílias em situação de vulnerabilidade.
+        Qualquer valor faz diferença.
+      </p>
 
-    <section id="sobre" aria-labelledby="ttl-sobre">
-      <div class="card">
-        <h2 id="ttl-sobre">Sobre a Nova Fusion Master</h2>
-        <p>A Nova Fusion Master nasceu para simplificar tecnologia e inovação para pessoas reais. Publicamos conteúdos originais, revisados e úteis, cobrindo temas como apps, web, IA aplicada e cultura digital.</p>
-        <p>Nosso compromisso é entregar informação confiável, acessível em dispositivos móveis e com boa experiência de leitura.</p>
-      </div>
-    </section>
+      <p><strong>PIX para doações:</strong></p>
+      <p style="font-size:18px;font-weight:700;color:#fff">
+        silvaphd007@gmail.com
+      </p>
 
-    <section id="artigos" aria-labelledby="ttl-artigos">
-      <h2 id="ttl-artigos">Artigos em destaque</h2>
-      <div class="grid cols-3">
-        <article class="card">
-          <h3>Como avaliar se um app é seguro</h3>
-          <p>Checklist rápido de permissões, origem do APK, política de privacidade e reputação do desenvolvedor para evitar golpes e apps invasivos.</p>
-          <ul>
-            <li>Baixe de fontes oficiais sempre que possível</li>
-            <li>Revise permissões desnecessárias</li>
-            <li>Pesquise pelo nome do app + “reclamações”</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Performance web sem complicação</h3>
-          <p>Boas práticas simples para sites estáticos: imagens otimizadas, HTML sem bloqueios e CSS enxuto. GitHub Pages ajuda na entrega rápida.</p>
-          <ul>
-            <li>Prefira imagens comprimidas (WebP/JPG)</li>
-            <li>Evite scripts desnecessários</li>
-            <li>Use meta descrição e títulos claros</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Entretenimento com responsabilidade</h3>
-          <p>Curadoria de apps de streaming e jogos que respeitam o tempo do usuário, sem anúncios abusivos e com conteúdo legalizado.</p>
-        </article>
-      </div>
-      <p class="small">Mais conteúdos serão publicados periodicamente para manter o site ativo e relevante.</p>
-    </section>
-
-    <section id="privacidade" aria-labelledby="ttl-priv">
-      <div class="card">
-        <h2 id="ttl-priv">Política de Privacidade</h2>
-        <p>Na <strong>Nova Fusion Master</strong>, a sua privacidade é nossa prioridade. Esta Política de Privacidade descreve como coletamos, usamos, protegemos e compartilhamos as informações que você fornece ao acessar nosso site. Ao continuar a usar este site, você concorda com os termos e condições descritos nesta política.</p>
-        
-        <h3>1. Coleta de Dados Pessoais</h3>
-        <p>Este site pode coletar dados pessoais quando você nos fornece voluntariamente, como nome e e-mail para fins de contato. Não coletamos dados sensíveis sem o seu consentimento explícito.</p>
-        
-        <h3>2. Uso de Cookies</h3>
-        <p>Utilizamos cookies e tecnologias semelhantes para melhorar sua experiência de navegação e para personalizar anúncios. Cookies são pequenos arquivos de texto armazenados em seu dispositivo para lembrar preferências de navegação e informações de uso.</p>
-        <p>Quando você acessa nosso site, cookies de terceiros, como o Google, podem ser usados para veicular anúncios. Esses cookies podem coletar informações sobre sua naveação para mostrar anúncios personalizados.</p>
-        <p>Você pode controlar os cookies através das configurações do seu navegador, ou gerenciar suas preferências de anúncios diretamente em sua conta do Google.</p>
-
-        <h3>3. Uso de Anúncios</h3>
-        <p>Este site exibe anúncios fornecidos por plataformas de terceiros, como o Google AdSense. Esses anúncios são baseados em sua navegação e podem incluir anúncios personalizados. O Google pode usar cookies e identificadores para veicular e medir a eficácia dos anúncios.</p>
-        <p>Se você desejar mais informações sobre como o Google usa os dados coletados para anúncios, você pode visitar a <a href="https://policies.google.com/technologies/ads" target="_blank">Política de Privacidade do Google</a>.</p>
-
-        <h3>4. Compartilhamento de Dados com Terceiros</h3>
-        <p>Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto conforme necessário para a exibição de anúncios e cumprimento de requisitos legais. Por exemplo, o Google pode usar seus dados para fornecer anúncios personalizados. Para mais detalhes sobre como o Google coleta e utiliza seus dados, acesse sua <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a>.</p>
-
-        <h3>5. Segurança dos Dados</h3>
-        <p>Adotamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, alteração ou divulgação. No entanto, nenhum método de transmissão de dados pela internet ou armazenamento eletrônico é 100% seguro, e não podemos garantir a segurança absoluta de suas informações.</p>
-
-        <h3>6. Seus Direitos</h3>
-        <p>Você tem o direito de acessar, corrigir ou excluir seus dados pessoais. Se desejar exercer esses direitos ou tiver dúvidas sobre nossa Política de Privacidade, entre em contato conosco através do e-mail: <a href="mailto:contato@novafusionmaster.com">contato@novafusionmaster.com</a>.</p>
-
-        <h3>7. Alterações nesta Política</h3>
-        <p>Podemos atualizar esta Política de Privacidade de tempos em tempos. Quaisquer alterações serão publicadas nesta página e entrarão em vigor imediatamente após a publicação. Recomendamos que você revise periodicamente esta página para se manter informado sobre como protegemos suas informações.</p>
-        
-        <p>Última atualização: <time datetime="2025-08-17">17/08/2025</time>.</p>
-      </div>
-    </section>
-
-    <section id="contato" aria-labelledby="ttl-contato">
-      <div class="card">
-        <h2 id="ttl-contato">Contato</h2>
-        <p>Fale com a equipe Nova Fusion Master:</p>
-        <p><a href="mailto:contato@novafusionmaster.com">contato@novafusionmaster.com</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap small" style="padding:16px 0;">
-      © 2025 Nova Fusion Master • Conteúdo original • Hospedado em GitHub Pages
+      <p class="small">
+        Campanha solidária • Transparência • Amor ao próximo
+      </p>
     </div>
-  </footer>
+  </section>
 
-  <!-- Integração da IA -->
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="card">
+      <h2>Sobre a campanha</h2>
+      <p>
+        O Natal do Bem é uma iniciativa solidária criada para levar esperança,
+        alimento e dignidade a quem mais precisa durante o período natalino.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="card">
+      <h2>Contato</h2>
+      <p>
+        E-mail: <a href="mailto:contato@novafusionmaster.com">
+        contato@novafusionmaster.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap small" style="padding:16px 0;">
+    © 2025 Nova Fusion Master • Natal do Bem • Hospedado em GitHub Pages
+  </div>
+</footer>
+
 </body>
 </html>
