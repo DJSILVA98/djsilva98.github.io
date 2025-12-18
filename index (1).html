@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Natal do Bem — Nova Fusion Master</title>
+
+  <meta name="description" content="Natal do Bem — Campanha solidária para arrecadação de doações e apoio a famílias em situação de vulnerabilidade.">
+  <meta name="google-adsense-account" content="ca-pub-3788293529175181">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Natal do Bem — Nova Fusion Master">
+  <meta property="og:description" content="Neste Natal, transforme solidariedade em esperança. Doe e faça a diferença.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="natal.jpg">
+
+  <link rel="canonical" href="https://novafusionmaster.github.io/">
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111827;
+      --muted:#9aa4b2;
+      --text:#e5e7eb;
+      --brand:#6ee7ff;
+      --ring: 0 0 0 2px rgba(110,231,255,.35);
+    }
+
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue","Noto Sans",sans-serif
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(11,15,20,.7);
+      backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid #1f2937
+    }
+
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      height:64px
+    }
+
+    .menu{display:flex;gap:14px}
+    .menu a{padding:8px 10px;color:#6ee7ff;text-decoration:none}
+
+    /* HERO LIMPO */
+    .hero-natal{
+      position:relative;
+      min-height:85vh;
+      background:url('natal.jpg') center/cover no-repeat;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      padding-bottom:40px;
+    }
+
+    .hero-natal::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.25);
+    }
+
+    .btn-doar{
+      position:relative;
+      z-index:2;
+      padding:15px 36px;
+      background:#c62828;
+      color:#fff;
+      font-weight:700;
+      border-radius:999px;
+      font-size:18px;
+      text-decoration:none
+    }
+
+    .btn-doar:hover{
+      background:#b71c1c
+    }
+
+    section{padding:32px 0}
+
+    .card{
+      background:var(--card);
+      border:1px solid #1f2937;
+      border-radius:16px;
+      padding:22px
+    }
+
+    h2{margin-top:0}
+
+    footer{
+      border-top:1px solid #1f2937;
+      margin-top:32px
+    }
+
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Nova Fusion Master</div>
+    <nav class="menu">
+      <a href="#leitura">Campanha</a>
+      <a href="#doacao">Doação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero-natal">
+    <a href="#doacao" class="btn-doar">❤️ Quero Doar Agora</a>
+  </section>
+
+  <!-- TEXTO DE LEITURA -->
+  <section id="leitura">
+    <div class="card">
+      <h2>🎄 Natal do Bem</h2>
+      <p>
+        Neste Natal, transforme solidariedade em esperança.
+        Um pequeno gesto pode levar alimento, dignidade e alegria
+        para famílias que mais precisam.
+      </p>
+
+      <p>
+        O <strong>Natal do Bem</strong> é uma campanha solidária criada para
+        arrecadar doações e apoiar famílias em situação de vulnerabilidade,
+        levando não apenas alimentos, mas também esperança e dignidade.
+      </p>
+    </div>
+  </section>
+
+  <!-- DOAÇÃO -->
+  <section id="doacao">
+    <div class="card">
+      <h2>❤️ Faça parte do Natal do Bem</h2>
+      <p>Qualquer valor faz diferença.</p>
+
+      <p><strong>PIX para doações:</strong></p>
+      <p style="font-size:18px;font-weight:700;color:#fff">
+        silvaphd007@gmail.com
+      </p>
+
+      <p class="small">
+        Campanha solidária • Transparência • Amor ao próximo
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="card">
+      <h2>Contato</h2>
+      <p>
+        <a href="mailto:contato@novafusionmaster.com">
+        contato@novafusionmaster.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap small" style="padding:16px 0;">
+    © 2025 Nova Fusion Master • Natal do Bem
+  </div>
+</footer>
+
+</body>
+</html>
